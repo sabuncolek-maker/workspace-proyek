@@ -5,7 +5,7 @@ Ditulis untuk agent yang baru datang dan belum tahu apa-apa: baca halaman ini sa
 habis, kamu akan paham aturan mainnya, proyek yang sedang berjalan, statusnya, dan
 langkah berikutnya. Rumah lengkapnya ada di Google Drive (akses di bagian akhir);
 halaman ini ringkasan resminya dan disegarkan Muse setiap berkas induk berubah.
-Terakhir disegarkan: 21 Nov 2026, 16:40 WIB.
+Terakhir disegarkan: 22 Nov 2026, 10:45 WIB.
 
 ## A. Standar workspace (v3)
 
@@ -40,6 +40,9 @@ Terakhir disegarkan: 21 Nov 2026, 16:40 WIB.
 
 - Animasi 3D - Kursi Kosong — seri animasi gaya konon; pilot: frame uji + Shot 1
   selesai, naskah PAUSE — diperbarui 21 Nov 2026
+- Animasi 3D Toon - Sejarah Singkat — seri sejarah singkat gaya 3D toon
+  (Three.js); pilot U-1206 kapal selam toilet selesai & disetujui Indra —
+  diperbarui 22 Nov 2026
 
 ## C. Proyek aktif: Animasi 3D - Kursi Kosong
 
@@ -74,7 +77,37 @@ Status terakhir (21 Nov 2026):
   (libEGL tidak ada) → Cycles CPU + OpenImageDenoise; CPU 2 core, RAM 7,8 GB;
   1 frame vertikal 720×1280 @24 samples = 49 detik.
 
-## D. Rumah lengkap & cara masuk
+## D. Proyek aktif: Animasi 3D Toon - Sejarah Singkat
+
+Seri video pendek vertikal (30–60 detik) sejarah militer, sains, dan kisah nyata
+absurd bergaya 3D toon / cel-shaded berkontur hitam tebal, karakter bola-kapsul
+(bean-body) 3D penuh. Mesinnya BUKAN Blender: Three.js (WebGL) dirender lewat
+Chromium headless (SwiftShader) di komputer jarak jauh Gemini.
+Peran: Indra = pemegang vonis + VO. Gemini = naskah terverifikasi, visual,
+render, mixing, QA.
+
+Aturan pipa proyek (ditulis Gemini sendiri; naskah lengkap
+"aturan-pipa-toon3d.md" di Drive proyek): format 1080×1920 30 fps H.264
+faststart; timing per kata WAJIB diukur dari VO final memakai faster-whisper
+(dilarang estimasi manual); master audio −14,0 LUFS (lulus −15 s.d. −13),
+True Peak ≤ −0,5 dBFS; gerbang mutu = audit contact sheet 3×3 sebelum render
+penuh + transkrip ulang MP4 final (kata meleset >0,15 dtk maks 3, 0 frame
+hitam, 0 freeze >0,45 dtk); unggahan Drive maks 10 MB per berkas.
+
+Status terakhir (22 Nov 2026):
+- Proyek dibuat Gemini 22 Nov 10:28 WIB sesuai Standar v3; rangka baku lengkap
+  (00-ATURAN, 01-ASET, KARYA, CATATAN.md).
+- Pilot "U-1206 — kapal selam yang tenggelam gara-gara toilet" SELESAI &
+  DISETUJUI Indra: 43 detik (1.290 frame), 1080×1920, 30 fps; render penuh
+  439,81 detik (±0,34 dtk/frame — bandingkan Cycles Kursi Kosong 49 dtk/frame);
+  QA sinkron LULUS (74 kata terukur, 73 cocok, 1 kata meleset >0,15 dtk);
+  mixing −14,9 LUFS, True Peak −0,8 dBFS; paket serah-terima bersih lengkap
+  di kapsul karya (BAHAN + PROSES + HASIL), tanpa sampah frame antara.
+- 01-ASET proyek masih kosong. Langkah berikutnya (dari CATATAN proyek):
+  naikkan generator karakter bean-body, model kapal selam, dan template shader
+  toon dari PROSES pilot ke 01-ASET sebagai modul bersama episode berikutnya.
+
+## E. Rumah lengkap & cara masuk
 
 - Google Drive (folder WORKSPACE-PROYEK, izin link = Pelihat):
   https://drive.google.com/drive/folders/1w0d0zg8yScMH51Qo8dnrR4nyueQrH97h
