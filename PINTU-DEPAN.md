@@ -5,7 +5,7 @@ Ditulis untuk agent yang baru datang dan belum tahu apa-apa: baca halaman ini sa
 habis, kamu akan paham aturan mainnya, proyek yang sedang berjalan, statusnya, dan
 langkah berikutnya. Rumah lengkapnya ada di Google Drive (akses di bagian akhir);
 halaman ini ringkasan resminya dan disegarkan Muse setiap berkas induk berubah.
-Terakhir disegarkan: 22 Nov 2026, 10:45 WIB.
+Terakhir disegarkan: 22 Nov 2026, 12:52 WIB.
 
 ## A. Standar workspace (v3)
 
@@ -43,6 +43,9 @@ Terakhir disegarkan: 22 Nov 2026, 10:45 WIB.
 - Animasi 3D Toon - Sejarah Singkat — seri sejarah singkat gaya 3D toon
   (Three.js); pilot U-1206 kapal selam toilet selesai & disetujui Indra —
   diperbarui 22 Nov 2026
+- ERLAN - Animasi 3D Toon — format 3D toon akun utama (palet ivory-hitam-emas,
+  niche AI, dua mode: dengan/tanpa karakter); proyek dibuat 22 Nov 2026,
+  episode 1 paketnya siap — diperbarui 22 Nov 2026
 
 ## C. Proyek aktif: Animasi 3D - Kursi Kosong
 
@@ -103,11 +106,43 @@ Status terakhir (22 Nov 2026):
   QA sinkron LULUS (74 kata terukur, 73 cocok, 1 kata meleset >0,15 dtk);
   mixing −14,9 LUFS, True Peak −0,8 dBFS; paket serah-terima bersih lengkap
   di kapsul karya (BAHAN + PROSES + HASIL), tanpa sampah frame antara.
-- 01-ASET proyek masih kosong. Langkah berikutnya (dari CATATAN proyek):
-  naikkan generator karakter bean-body, model kapal selam, dan template shader
-  toon dari PROSES pilot ke 01-ASET sebagai modul bersama episode berikutnya.
+- Kit modular SUDAH naik ke 01-ASET: rig-karakter.js, tekstur-prosedural.js,
+  vfx-kamera.js + vfx-kamera-v2.1.js (dibuat Gemini 22 Nov).
+- Episode 2 "Perang Emu 1932" SELESAI (paket naskah+VO+timings oleh Muse,
+  produksi Gemini): 53,77 detik, QC Muse lolos dengan catatan loudness
+  -15,2 LUFS; TAYANG di OHLE 22 Nov 2026 (YouTube + TikTok) atas vonis Indra.
+- Episode 3: paket "Banjir Molase Boston 1919" siap di kapsul KARYA
+  (naskah + VO Puck bersih + timings.json), menunggu produksi Gemini.
+  Paket maraton 1904 DIBATALKAN — topiknya sudah pernah tayang di OHLE
+  11 Nov 2026; kapsulnya sudah dibuang ke sampah Drive, jangan diproduksi.
 
-## E. Rumah lengkap & cara masuk
+## E. Proyek aktif: ERLAN - Animasi 3D Toon
+
+Format animasi 3D toon untuk AKUN UTAMA Indra (IG @indraerlangga1508 +
+FB utama), niche AI. Ditetapkan Indra 22 Nov 2026, berkembang dari pertanyaan
+apakah dunia "Kursi Kosong" bisa dipakai Erlan Studio — namanya diganti ERLAN
+supaya tidak terkunci pada kursi. Aturan lengkap: 00-ATURAN/aturan-format-erlan.md
+di Drive proyek.
+
+- Palet TERKUNCI tiga warna Erlan Studio: ivory #F7F3E8 (dunia), hitam #121214
+  (kontur/bayangan/teks), emas #FFC42B (satu-satunya aksen).
+- Dua mode: (1) dengan karakter bean-body; (2) tanpa karakter — benda dan ruang
+  yang berakting. Berita/konsep bawaan mode tanpa karakter; cerita/refleksi
+  memakai karakter. Setiap frasa narasi WAJIB tervisualkan.
+- Mesin: kit modular proyek Sejarah Singkat DIPINJAM (rig, tekstur, vfx kamera).
+- Standar: 1080x1920 30 fps faststart; master -14,0 LUFS ±0,5, TP <= -0,9;
+  VO master waktu dari timings.json (faster-whisper); suara akun utama yang
+  sedang berlaku (terakhir Schedar) — jangan diganti tanpa kata Indra.
+- Peran: Indra = vonis + label AI dari aplikasi. Muse = naskah, VO, timings,
+  QC, posting. Gemini (Neon) = produksi visual memakai kit.
+
+Status terakhir (22 Nov 2026):
+- Proyek dibuat Muse 22 Nov 2026 sesuai Standar v3 (00-ATURAN, 01-ASET, KARYA).
+- Episode 1 "Kursi Sutradara" (mode tanpa karakter): paket siap di kapsul KARYA
+  — naskah refleksi orang pertama + VO Schedar bersih 52,51 detik + timings.json
+  (118 kata, 15 klausa). Menunggu produksi Gemini.
+
+## F. Rumah lengkap & cara masuk
 
 - Google Drive (folder WORKSPACE-PROYEK, izin link = Pelihat):
   https://drive.google.com/drive/folders/1w0d0zg8yScMH51Qo8dnrR4nyueQrH97h
