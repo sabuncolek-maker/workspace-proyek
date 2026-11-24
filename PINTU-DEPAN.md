@@ -5,7 +5,10 @@ Ditulis untuk agent yang baru datang dan belum tahu apa-apa: baca halaman ini sa
 habis, kamu akan paham aturan mainnya, proyek yang sedang berjalan, statusnya, dan
 langkah berikutnya. Rumah lengkapnya ada di Google Drive (akses di bagian akhir);
 halaman ini ringkasan resminya dan disegarkan Muse setiap berkas induk berubah.
-Terakhir disegarkan: 22 Nov 2026, 12:52 WIB.
+Terakhir disegarkan: 24 Nov 2026, 08:40 WIB.
+Catatan akar workspace: di akar WORKSPACE-PROYEK sekarang ada folder 00-ATURAN/
+berisi SOP-3D-TOON-GLOBAL.md (aturan umum lintas proyek); berkas lepas di akar
+tinggal BACA-DULU.md, PETA.md, dan halaman ini.
 
 ## A. Standar workspace (v3)
 
@@ -38,14 +41,14 @@ Terakhir disegarkan: 22 Nov 2026, 12:52 WIB.
 
 ## B. Peta proyek
 
-- Animasi 3D - Kursi Kosong — seri animasi gaya konon; pilot: frame uji + Shot 1
-  selesai, naskah PAUSE — diperbarui 21 Nov 2026
+- Animasi 3D - Kursi Kosong — seri animasi gaya konon; pilot selesai; Episode 2
+  Aron Ralston TAYANG 24 Nov 2026 versi animasi 2D — diperbarui 24 Nov 2026
 - Animasi 3D Toon - Sejarah Singkat — seri sejarah singkat gaya 3D toon
-  (Three.js); pilot U-1206 kapal selam toilet selesai & disetujui Indra —
-  diperbarui 22 Nov 2026
+  (Three.js); 4 episode selesai tayang (U-1206, Perang Emu, Banjir Molase,
+  Bom Kelelawar) — diperbarui 24 Nov 2026
 - ERLAN - Animasi 3D Toon — format 3D toon akun utama (palet ivory-hitam-emas,
-  niche AI, dua mode: dengan/tanpa karakter); proyek dibuat 22 Nov 2026,
-  episode 1 paketnya siap — diperbarui 22 Nov 2026
+  niche AI, dua mode: dengan/tanpa karakter); episode 1 & 2 sudah tayang —
+  diperbarui 24 Nov 2026
 
 ## C. Proyek aktif: Animasi 3D - Kursi Kosong
 
@@ -66,12 +69,20 @@ Aturan animasi wajib (ringkas; naskah lengkap "aturan-animasi-14" di Drive):
 - Gerbang mutu: audit beberapa frame kunci sebelum render penuh. Bila satu aturan
   terpaksa dilanggar, tulis nomor aturan + alasannya di CATATAN karya.
 
-Status terakhir (21 Nov 2026):
+Status terakhir (24 Nov 2026):
 - Bedah channel konon selesai. Frame uji ruang makan LULUS vonis Indra.
 - Shot 1 SELESAI dan memuaskan Indra: Bima duduk di kursi kosong, Nenek menoleh —
   3,5 detik, 640×360, 84 frame, Cycles CPU ±5,4 dtk/frame; berkas sumber .blend +
   skrip tersimpan di kapsul karya (PROSES), video di HASIL.
-- 9 sprite karakter modular (Bima & Nenek) sudah NAIK ke 01-ASET proyek.
+- 14 sprite karakter modular sudah NAIK ke 01-ASET proyek.
+- Kapsul pilot dirapikan 24 Nov 2026: catatan arsip pindah ke PROSES/arsip/,
+  timings pindah ke BAHAN, audio bahan bernama vo-kursi-kosong.wav, video uji
+  shot1-bima-nenek-v1.mp4 pindah ke PROSES.
+- Episode 2 "Aron Ralston — 127 Jam" (kapsul 2026-11-23-aron-ralston-127-jam):
+  naskah + VO Puck oleh Muse; hasil visual versi 3D DIBUANG atas perintah Indra,
+  diganti animasi 2D yang dibuat Indra sendiri di luar Muse; TAYANG 24 Nov 2026
+  pukul 10:30 WIB di YouTube OHLE + TikTok @ohle1508. Berkas video TIDAK disimpan
+  di Drive (hanya catatan di CATATAN.md kapsul); master ada di folder lokal Muse.
 - Naskah pilot "Kursi yang Tidak Boleh Diduduki": DRAF, status PAUSE atas perintah
   Indra. VO belum dibuat. Jangan diutak-atik sampai Indra mencabut PAUSE.
 - Keputusan terbuka: setelan render standar produksi — uji 1 frame vertikal
@@ -106,14 +117,19 @@ Status terakhir (22 Nov 2026):
   QA sinkron LULUS (74 kata terukur, 73 cocok, 1 kata meleset >0,15 dtk);
   mixing −14,9 LUFS, True Peak −0,8 dBFS; paket serah-terima bersih lengkap
   di kapsul karya (BAHAN + PROSES + HASIL), tanpa sampah frame antara.
-- Kit modular SUDAH naik ke 01-ASET: rig-karakter.js, tekstur-prosedural.js,
-  vfx-kamera.js + vfx-kamera-v2.1.js (dibuat Gemini 22 Nov).
+- Kit modular di 01-ASET: yang tampil di atas sekarang rig-karakter-v3.js,
+  vfx-kamera-v3.js, dan tekstur-prosedural.js; versi lama (rig-karakter.js,
+  vfx-kamera.js, vfx-kamera-v2.1.js) diarsipkan ke 01-ASET/arsip-versi-lama
+  sejak perapian 24 Nov 2026.
 - Episode 2 "Perang Emu 1932" SELESAI (paket naskah+VO+timings oleh Muse,
   produksi Gemini): 53,77 detik, QC Muse lolos dengan catatan loudness
   -15,2 LUFS; TAYANG di OHLE 22 Nov 2026 (YouTube + TikTok) atas vonis Indra.
-- Episode 3: paket "Banjir Molase Boston 1919" siap di kapsul KARYA
-  (naskah + VO Puck bersih + timings.json), menunggu produksi Gemini.
-  Paket maraton 1904 DIBATALKAN — topiknya sudah pernah tayang di OHLE
+- Episode 3 "Banjir Molase Boston 1919" SELESAI dan TAYANG 22 Nov 2026
+  pukul 19:00 WIB di OHLE (YouTube + TikTok).
+- Episode 4 "Bom Kelelawar 1943" SELESAI dan TAYANG 24 Nov 2026 pukul 07:00 WIB
+  di OHLE (YouTube + TikTok). Nama berkas kapsulnya sudah diseragamkan:
+  naskah-terkunci.txt dan timings.json di BAHAN.
+- Paket maraton 1904 DIBATALKAN — topiknya sudah pernah tayang di OHLE
   11 Nov 2026; kapsulnya sudah dibuang ke sampah Drive, jangan diproduksi.
 
 ## E. Proyek aktif: ERLAN - Animasi 3D Toon
@@ -136,11 +152,20 @@ di Drive proyek.
 - Peran: Indra = vonis + label AI dari aplikasi. Muse = naskah, VO, timings,
   QC, posting. Gemini (Neon) = produksi visual memakai kit.
 
-Status terakhir (22 Nov 2026):
-- Proyek dibuat Muse 22 Nov 2026 sesuai Standar v3 (00-ATURAN, 01-ASET, KARYA).
-- Episode 1 "Kursi Sutradara" (mode tanpa karakter): paket siap di kapsul KARYA
-  — naskah refleksi orang pertama + VO Schedar bersih 52,51 detik + timings.json
-  (118 kata, 15 klausa). Menunggu produksi Gemini.
+Status terakhir (24 Nov 2026):
+- Proyek dibuat Muse 22 Nov 2026 sesuai Standar v3 (00-ATURAN, 01-ASET, KARYA);
+  CATATAN.md akar proyek dibuat 24 Nov 2026; di 00-ATURAN juga ada
+  SOP-PRODUKSI-3D-EDITORIAL.md.
+- Episode 1 "Kursi Sutradara" (mode tanpa karakter): final
+  erlan-ep1-kursi-sutradara-v2-final.mp4 di HASIL kapsul; TAYANG di
+  IG @indraerlangga1508 pada 22 Nov 2026 pukul 15:50 WIB. Versi v1 dan v2
+  tersimpan di HASIL/versi-sebelumnya.
+- Episode 2 "Pekerjaan Terpapar AI": final erlan-ep2-pekerjaan-terpapar-ai-v2.mp4
+  di HASIL kapsul; TAYANG 22 Nov 2026 pukul 18:50 WIB di YouTube utama +
+  TikTok utama; QC Muse lolos dengan catatan ringan.
+- Perapian 24 Nov 2026: skrip qa_dinamika.py sekarang di PROSES kapsul Episode 2;
+  CATATAN-v2.md, CATATAN-v2-neon.md, dan QC-muse-ep2.md pindah ke PROSES kapsul
+  masing-masing (akar kapsul hanya CATATAN.md).
 
 ## F. Rumah lengkap & cara masuk
 
